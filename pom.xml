@@ -122,6 +122,7 @@
         <maven-shade-plugin.version>3.2.4</maven-shade-plugin.version>
         <maven-helper-plugin.version>3.2.0</maven-helper-plugin.version>
         <influxdb-java.version>2.22</influxdb-java.version>
+        <tibigdata.version>0.0.4</tibigdata.version>
     </properties>
 
     <dependencyManagement>
@@ -440,6 +441,12 @@
                 <groupId>org.influxdb</groupId>
                 <artifactId>influxdb-java</artifactId>
                 <version>${influxdb-java.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.tidb</groupId>
+                <artifactId>bigdata-core</artifactId>
+                <version>${tibigdata.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
